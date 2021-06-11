@@ -48,24 +48,24 @@ KERNEL_DIR="$(pwd)"
 BASEDIR="$(basename "$KERNEL_DIR")"
 
 # The name of the Kernel, to name the ZIP
-ZIPNAME="azure"
+ZIPNAME="UghTea"
 
 # Build Author
 # Take care, it should be a universal and most probably, case-sensitive
-AUTHOR="Panchajanya1999"
+AUTHOR="D4rkKnight21"
 
 # Architecture
 ARCH=arm64
 
 # The name of the device for which the kernel is built
-MODEL="Redmi Note 7 Pro"
+MODEL="Mi 8 Lite"
 
 # The codename of the device
-DEVICE="violet"
+DEVICE="platina"
 
 # The defconfig which should be used. Get it from config.gz from
 # your device or check source
-DEFCONFIG=vendor/violet-perf_defconfig
+DEFCONFIG=platina_defconfig
 
 # Specify compiler. 
 # 'clang' or 'gcc'
@@ -73,7 +73,7 @@ COMPILER=clang
 
 # Specify linker.
 # 'ld.lld'(default)
-LINKER=ld.lld
+#LINKER=ld.#ll
 
 # Clean source prior building. 1 is NO(default) | 0 is YES
 INCREMENTAL=1
@@ -83,7 +83,7 @@ PTTG=1
 	if [ $PTTG = 1 ]
 	then
 		# Set Telegram Chat ID
-		CHATID="-1001231303646"
+		CHATID="-1001289488472"
 	fi
 
 # Generate a full DEFCONFIG prior building. 1 is YES | 0 is NO(default)
@@ -94,7 +94,7 @@ FILES=Image.gz-dtb
 
 # Build dtbo.img (select this only if your source has support to building dtbo.img)
 # 1 is YES | 0 is NO(default)
-BUILD_DTBO=1
+BUILD_DTBO=0
 	if [ $BUILD_DTBO = 1 ]
 	then 
 		# Set this to your dtbo path. 
@@ -121,7 +121,7 @@ SILENCE=0
 
 # Debug purpose. Send logs on every successfull builds
 # 1 is YES | 0 is NO(default)
-LOG_DEBUG=0
+LOG_DEBUG=1
 
 ##------------------------------------------------------##
 ##---------Do Not Touch Anything Beyond This------------##
