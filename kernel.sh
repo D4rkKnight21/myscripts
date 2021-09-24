@@ -48,7 +48,7 @@ KERNEL_DIR="$(pwd)"
 BASEDIR="$(basename "$KERNEL_DIR")"
 
 # The name of the Kernel, to name the ZIP
-ZIPNAME="UghTea"
+ZIPNAME="Perf"
 
 # Build Author
 # Take care, it should be a universal and most probably, case-sensitive
@@ -65,7 +65,7 @@ DEVICE="platina"
 
 # The defconfig which should be used. Get it from config.gz from
 # your device or check source
-DEFCONFIG=platina_defconfig
+DEFCONFIG=platina_user_defconfig
 
 # Specify compiler. 
 # 'clang' or 'gcc'
@@ -83,7 +83,7 @@ PTTG=1
 	if [ $PTTG = 1 ]
 	then
 		# Set Telegram Chat ID
-		CHATID="-1001289488472"
+		CHATID="-1001521554007"
 	fi
 
 # Generate a full DEFCONFIG prior building. 1 is YES | 0 is NO(default)
