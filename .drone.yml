@@ -2,7 +2,7 @@
 clone: 
   depth: 1
 kind: pipeline
-name: PerfPipeline
+name: Pipeline
 steps: 
   - name: Kernel Pipeline
     image: archlinux:base-devel
